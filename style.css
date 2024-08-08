@@ -11,8 +11,10 @@
   color: #fff;
   font-size: 1vw;
   background-color: #010101;
-  padding-top: 10px;
+  padding-top: 50px;
   padding-bottom:10px ;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .toggle-button{
@@ -25,7 +27,10 @@
   height: 0.625rem;
   margin-left: 20px;
 }
-
+.pages{
+  width: 100%;
+  height:100vh;
+}
 .nav-container {
   position: fixed;
   top: 0;
@@ -37,6 +42,8 @@
   padding-left: 1.25rem;
   height: 3.125rem;
   color: #0a0a0a;
+  z-index: 3;
+  background-color: transparent;
 }
 
 .nav-container ul {
@@ -74,18 +81,18 @@ width: 10em;
 }
 
 .drive-button {
-  margin-top: 320px;
+  padding-top: 320px;
   display: flex;
-  gap: 20px;
+  gap: 30px;
   justify-content: center;
-  margin-bottom: 81px;
+  padding-bottom: 9.111vh;
 }
 
 .b1 {
   background-color:black;
   color: #fff;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 15px;
   padding: 7px 80px;
   border-radius: 5px;
   border: none;
@@ -95,15 +102,15 @@ width: 10em;
   background-color:white;
   color:black;
   text-decoration: none;
-  font-size: 13px;
-  padding: 7px 80px;
+  font-size: 15px;
+  padding: 7px 20px;
   border-radius: 5px;
   border: none;
 }
  
 .img{
   width: 100%;
-  height:100%;
+  height:100vh;
   position: absolute;
   object-fit:cover;
   object-position: center;
@@ -126,14 +133,20 @@ width: 10em;
 .page-info h4 {
   font-weight: 500;
   font-size: 20px;
+}.drive-button {
+  padding-top: 52vh; /* Adjusted padding for responsiveness */
+  display: flex;
+  gap: 3vw; /* Adjusted gap for responsiveness */
+  justify-content: center;
+  padding-bottom: 9vh; /* Adjusted padding for responsiveness */
 }
 
-.drive-button {
-  margin-top: 320px;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  margin-bottom: 81px;
+.b1, .b2 {
+  text-decoration: none;
+  font-size: 1.5vw; /* Adjusted font size for responsiveness */
+  padding: 0.5vh 4vw; /* Adjusted padding for responsiveness */
+  border-radius: 5px;
+  border: none;
 }
 
 .b1 {
@@ -168,47 +181,96 @@ footer{
     text-decoration: none;
     color: #fff;
   }
+  @media screen and (max-width: 767px){
 
-@media (max-width: 768px) {
-  .drive-button {
-    margin-top: 160px;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-bottom: 90px;
-}
-  .b1, .b2 {
-    padding: 10px 23px;
-    font-size: 15px;
-}
-.logo{
-  width: 6.5rem;
-  height: 0.625rem;
-  margin-left: 2px;
-}
-.nav-container ul {
-  display: flex;
-  list-style: none;
-  gap: 3.125rem;
-  font-size: 1.25rem;
-  font-weight: 500;
-}
-.nav-container .icons {
-display: flex;
-font-size: 2.25rem;
-gap: 2.625rem;
+    .drive-button {
+      padding-top: 46vh; /* Adjusted padding for responsiveness */
+      display: flex;
+      gap: 3vw; /* Adjusted gap for responsiveness */
+      justify-content: center;
+      padding-bottom: 9vh; /* Adjusted padding for responsiveness */
+    }
+    
+    .b1, .b2 {
+      text-decoration: none;
+      font-size: 1.5vw; /* Adjusted font size for responsiveness */
+      padding: 0.5vh 4vw; /* Adjusted padding for responsiveness */
+      border-radius: 5px;
+      border: none;
+    }
+    
+    .b1 {
+      background-color:black;
+      color: #fff;
+      text-decoration: none;
+      font-size: 15px;
+      padding: 7px 40px;
+      border-radius: 5px;
+      border: none;
+    }
+    
+    .b2 {
+      background-color:white;
+      color:black;
+      text-decoration: none;
+      font-size: 15px;
+      padding: 7px 40px;
+      border-radius: 5px;
+      border: none;
+    }
+    .logo {
+      width: 5rem;
+      height: 0.735rem;
+      margin-left: 15px;
+  }
+  .page-info h1 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 110px;
+ }
+ .page-info {
+  margin-right: 28px;
 }
 .text-size {
   text-align: center;
   color: #fff;
-  font-size: 2.9vw;
+  font-size: 2.2vw;
   background-color: #010101;
-  padding-top: 10px;
+  padding-top: 29px;
   padding-bottom: 10px;
+  padding-right: 83px;
+  padding-left: 56px;
 }
-.footer{
+.footer a{
+  text-decoration: none;
+  color: #fff;
   display: flex;
-flex-direction: column;
-column-gap: 10px;
+flex-direction:column;
+padding-top: 10px;
+
+  }
+  .nav-container ul {
+    display: flex;
+    list-style: none;
+    gap: 1.125rem;
+    font-size: 1.725rem;
+    font-weight: 600;
 }
+
+.nav-container .icons {
+  display: flex;
+  font-size: 1.925rem;
+  gap: 0.625rem;
 }
+
+footer{
+  background: #0a0a0a;
+  position:bottom;
+  word-spacing: 10px;
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 10px;
+  }
+  }
+
